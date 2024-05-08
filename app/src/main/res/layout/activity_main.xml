@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFCDD2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rental PS Thanos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/pacificoregular"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/twcenclassregular"/>
+
+    <LinearLayout
+        android:id="@+id/type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <RadioGroup
+            android:id="@+id/type_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_ps5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PS5"
+                android:fontFamily="@font/twcenclassregular"/>
+
+            <RadioButton
+                android:id="@+id/radio_ps4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PS4"
+                android:fontFamily="@font/twcenclassregular"/>
+
+            <RadioButton
+                android:id="@+id/radio_ps3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PS3"
+                android:fontFamily="@font/twcenclassregular"/>
+
+            <RadioButton
+                android:id="@+id/radio_psvr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PSVR"
+                android:fontFamily="@font/twcenclassregular"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambahan:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/twcenclassregular"/>
+
+    <LinearLayout
+        android:id="@+id/addition_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <RadioGroup
+            android:id="@+id/addition_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_indomie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indomie"
+                android:fontFamily="@font/twcenclassregular"/>
+
+            <RadioButton
+                android:id="@+id/radio_mie_ayam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mie Ayam"
+                android:fontFamily="@font/twcenclassregular"/>
+
+            <RadioButton
+                android:id="@+id/radio_somay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Somay"
+                android:fontFamily="@font/twcenclassregular"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/twcenclassregular"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jam"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/time_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:fontFamily="@font/twcenclassregular"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
